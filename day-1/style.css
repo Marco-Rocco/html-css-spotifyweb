@@ -30,7 +30,7 @@
 }
 
 .logo :first-child{
-    width: 150px;
+    width: 200px;
 }
 
 .logo :nth-last-child(1){
@@ -45,6 +45,12 @@ ul img{
     width: 25px;
 }
 
+li{
+    color: white;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
 li > *{
     vertical-align: middle;
     margin: 0px 5px 5px 0px;
@@ -52,11 +58,24 @@ li > *{
     font-weight: 300;
 }
 
+.sidebar p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.add {
+    padding: 10px 12px;
+    background-color: gray;
+    width: fit-content;
+    display: inline-block;
+}
+
+
 /* main  */
 
 main{
     display: flex;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 80px);
     background-color: #151a22;
 }
 
@@ -70,11 +89,11 @@ footer{
 
 
 footer{
-    height: 120px;
+    height: 80px;
 }
 
 .topbar {
-    height: 180px
+    height: 80px
 }
 
 /* mobile */
@@ -91,6 +110,7 @@ footer{
         display: block;
         width: 30px;
         margin: auto;
+        margin-bottom: 30px;
     }
 
     .sidebar nav li span{
