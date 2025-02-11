@@ -145,6 +145,10 @@ footer{
         margin-bottom: 30px;
     }
 
+    nav ul{
+        text-align: center;
+    }
+
     .sidebar nav li span{
         display: none;
     }
@@ -155,6 +159,15 @@ footer{
     }
 
     .playlist{
+        display: none;
+    }
+
+    .download{
+        margin-top: 420px;
+        border: none;
+    }
+
+    .download span, .profile span{
         display: none;
     }
 }
