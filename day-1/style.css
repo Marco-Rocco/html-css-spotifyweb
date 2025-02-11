@@ -21,10 +21,35 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: fit-content;
+    padding: 10px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo :first-child{
+    width: 150px;
 }
 
 .logo :nth-last-child(1){
     display: none;
+}
+
+.sidebar ul{
+    margin-bottom: 20px;
+}
+
+ul img{
+    width: 25px;
+}
+
+li > *{
+    vertical-align: middle;
+    margin: 0px 5px 5px 0px;
+    color: white;
+    font-weight: 300;
 }
 
 /* main  */
@@ -52,6 +77,28 @@ footer{
     height: 180px
 }
 
-.sidebar {
-    width: 200px;
+/* mobile */
+
+@media screen and (max-width: 768px) {
+
+    /* sidebar */
+
+    .logo :first-child{
+        display: none;
+    }
+    
+    .logo :nth-last-child(1){
+        display: block;
+        width: 30px;
+        margin: auto;
+    }
+
+    .sidebar nav li span{
+        display: none;
+    }
+
+    .sidebar nav li img{
+        width: 30px;
+    }
 }
+
