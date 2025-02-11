@@ -12,11 +12,11 @@ body{
     height: 100vh;
 }
 
-/* header  */
+/* topbar */
 
-header{
+.topbar{
     background-color: #10131a;
-    z-index: 1;
+    width: 100%;
 }
 
 /* sidebar  */
@@ -25,29 +25,34 @@ header{
     background-color: black;
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    height: 100%;
 }
 
 /* main  */
 
 main{
+    height: calc(100vh - 120px);
     background-color: #151a22;
-    z-index: 1;
 }
 
 /* footer  */
 
 footer{
     background-color: #272727;
-    z-index: 2;
 }
 
 /* debug */
 
-main{
-    height: calc(100vh - 120px);
-}
 
 footer{
     height: 120px;
+}
+
+.topbar {
+    height: 180px
+}
+
+.sidebar {
+    width: 100px;
+    
 }
