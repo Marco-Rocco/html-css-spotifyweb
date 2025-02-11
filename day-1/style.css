@@ -48,14 +48,13 @@ ul img{
 li{
     color: white;
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 300;
 }
 
 li > *{
     vertical-align: middle;
     margin: 0px 5px 5px 0px;
-    color: white;
-    font-weight: 300;
 }
 
 .sidebar p{
@@ -69,6 +68,8 @@ li > *{
     width: fit-content;
     display: inline-block;
 }
+
+
 
 
 /* main  */
@@ -119,6 +120,11 @@ footer{
 
     .sidebar nav li img{
         width: 30px;
+        margin: auto;
+    }
+
+    .playlist{
+        display: none;
     }
 }
 
