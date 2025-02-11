@@ -31,6 +31,7 @@ body{
 /* main  */
 
 main{
+    display: flex;
     height: calc(100vh - 120px);
     background-color: #151a22;
 }
@@ -53,6 +54,5 @@ footer{
 }
 
 .sidebar {
-    width: 100px;
-    
+    width: 200px;
 }
