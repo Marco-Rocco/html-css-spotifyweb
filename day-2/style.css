@@ -169,29 +169,29 @@ main{
     border-bottom: solid 2px #adff2f;
 }
 
-.recent{
+.recent, .createdfor{
     padding: 10px 20px; 
 }
 
-.recent h2{
+.recent h2, .createdfor h2{
     color: white;
     margin-bottom: 20px;
 }
 
-.recent .container{
+.recent .container, .createdfor .container{
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding: 10px 0px;
 }
 
-.recent .container .card{
+.recent .container .card, .createdfor .container .card{
     width: calc((100% - 100px) /6);
     text-align: center;
     color: white;
 }
 
-.recent .container .card p{
+.recent .container .card p, .createdfor .container .card p{
     margin-bottom: 10px;
 }
 
@@ -201,6 +201,16 @@ main{
 }
 
 .recent .container .card span{
+    color: gray;
+    opacity: 0.7;
+}
+
+.createdfor .container .card img{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.createdfor span{
     color: gray;
     opacity: 0.7;
 }
@@ -268,6 +278,15 @@ footer{
     .topmenu ul li{
         width: calc((100% - 15px) /4);
         font-size: smaller;
+    }
+
+    .recent .container{
+        flex-wrap: wrap;
+    }
+    
+    
+    .recent .container .card{
+        width: calc((100% - 20px) /2);
     }
 
 }
