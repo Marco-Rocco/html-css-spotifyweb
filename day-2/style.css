@@ -169,35 +169,41 @@ main{
     border-bottom: solid 2px #adff2f;
 }
 
-.recent, .createdfor{
+.recent, .createdfor, .artists{
     padding: 10px 20px; 
 }
 
-.recent h2, .createdfor h2{
+.recent h2, .createdfor h2, .artists h2{
     color: white;
     margin-bottom: 20px;
 }
 
-.recent .container, .createdfor .container{
+.recent .container, .createdfor .container, .artists .container{
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding: 10px 0px;
 }
 
-.recent .container .card, .createdfor .container .card{
+.recent .container .card, .createdfor .container .card, .artists .container .card{
     width: calc((100% - 100px) /6);
     text-align: center;
     color: white;
 }
 
-.recent .container .card p, .createdfor .container .card p{
+.recent .container .card p, .createdfor .container .card p, .artists .container .card p{
     margin-bottom: 10px;
 }
 
-.recent .container .card img{
+.recent .container .card img, .createdfor .container .card img{
     width: 100%;
-    margin-bottom: 10px 0px;
+    margin: 10px 0px;
+}
+
+.artists .container .card img{
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 50%;
 }
 
 .recent .container .card span{
@@ -205,12 +211,7 @@ main{
     opacity: 0.7;
 }
 
-.createdfor .container .card img{
-    width: 100%;
-    margin: 10px 0px;
-}
-
-.createdfor span{
+.createdfor span, .artists span{
     color: gray;
     opacity: 0.7;
 }
@@ -285,7 +286,7 @@ footer{
     }
     
     
-    .recent .container .card, .createdfor .container .card{
+    .recent .container .card, .createdfor .container .card, .artists .container .card{
         width: calc((100% - 20px) /2);
     }
 
@@ -317,7 +318,7 @@ footer{
         flex-wrap: wrap;
     }
     
-    .recent .container .card, .createdfor .container .card{
+    .recent .container .card, .createdfor .container .card, .artists .container .card{
         width: calc((100% - 20px) /2);
     }
        
@@ -353,7 +354,7 @@ footer{
         flex-wrap: wrap;
     }
       
-    .recent .container .card, .createdfor .container .card{
+    .recent .container .card, .createdfor .container .card, .artists .container .card{
         width: calc((100% - 60px) /4);
     }
        
