@@ -59,7 +59,7 @@ body {
     margin-bottom: 20px;
 }
 
-ul img{
+.sidebar ul img{
     width: 25px;
 }
 
@@ -138,6 +138,7 @@ main{
     background-color: #151a22;
 }
 
+
 /* footer  */
 
 footer{
@@ -152,12 +153,18 @@ footer{
 }
 
 .topbar {
-    height: 80px
+    height: 80px;
 }
 
-/* mobile */
+.maincontainer{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
 
-@media screen and (max-width: 768px) {
+/* mobile (xs)*/
+
+@media screen and (max-width: 576px) {
 
     /* sidebar */
 
