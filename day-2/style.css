@@ -23,6 +23,9 @@ body {
     height: calc(100vh - 80px);
     width: fit-content;
     padding: 10px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
 }
 
 .logo {
@@ -118,6 +121,7 @@ main{
     display: flex;
     height: calc(100vh - 80px);
     background-color: #151a22;
+    overflow: scroll;
 }
 
 .content{
@@ -130,6 +134,9 @@ main{
     align-items: center;
     background-color: #10131a;
     padding: 20px 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 .upgrade button{
@@ -287,6 +294,17 @@ footer{
         font-size: smaller;
     }
 
+    .recent .container{
+        flex-wrap: wrap;
+    }
+    
+    
+    .recent .container .card{
+        width: calc((100% - 20px) /2);
+    }
+       
+
+
 }
 
 
@@ -312,6 +330,16 @@ footer{
         width: calc((100% - 20px) /5);
         font-size: smaller;
     }
+
+    .recent .container{
+        flex-wrap: wrap;
+    }
+    
+    
+    .recent .container .card{
+        width: calc((100% - 60px) /4);
+    }
+       
     
 }
 
