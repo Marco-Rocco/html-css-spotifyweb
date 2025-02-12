@@ -162,23 +162,31 @@ main{
     border-bottom: solid 2px #adff2f;
 }
 
+.recent{
+    padding: 10px 20px; 
+}
+
+.recent h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.recent .container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.recent .container .card{
+    width: calc((100% - 50px) /6);
+}
+
 /* footer  */
 
 footer{
     background-color: #272727;
 }
-
-/* debug */
-
-
-footer{
-    height: 80px;
-}
-
-.topbar {
-    height: 80px;
-}
-
 
 /* mobile (xs)*/
 
@@ -270,4 +278,32 @@ footer{
         font-size: smaller;
     }
     
+}
+
+
+
+
+
+
+
+
+
+
+
+/* debug */
+
+
+footer{
+    height: 80px;
+}
+
+.container{
+    background-color: yellow;
+
+}
+
+.card{
+    background-color: pink;
+    height: 100px;
+    width: 100px;
 }
