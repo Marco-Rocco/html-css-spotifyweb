@@ -15,8 +15,19 @@ body {
 /* topbar */
 
 .topbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #10131a;
     width: 100%;
+}
+
+.topbar button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
 }
 
 /* sidebar  */
