@@ -174,12 +174,28 @@ main{
 .recent .container{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     padding: 10px 0px;
 }
 
 .recent .container .card{
-    width: calc((100% - 50px) /6);
+    width: calc((100% - 100px) /6);
+    text-align: center;
+    color: white;
+}
+
+.recent .container .card p{
+    margin-bottom: 10px;
+}
+
+.recent .container .card img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.recent .container .card span{
+    color: gray;
+    opacity: 0.7;
 }
 
 /* footer  */
@@ -187,6 +203,11 @@ main{
 footer{
     background-color: #272727;
 }
+
+
+
+
+
 
 /* mobile (xs)*/
 
@@ -244,6 +265,12 @@ footer{
 
 }
 
+
+
+
+
+
+
 /* small  */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -261,6 +288,14 @@ footer{
     }
 
 }
+
+
+
+
+
+
+
+
 
 /* tablet (m)  */
 
@@ -297,13 +332,3 @@ footer{
     height: 80px;
 }
 
-.container{
-    background-color: yellow;
-
-}
-
-.card{
-    background-color: pink;
-    height: 100px;
-    width: 100px;
-}
