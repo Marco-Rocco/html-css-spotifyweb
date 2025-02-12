@@ -12,24 +12,6 @@ body {
     width: 100vw;
 }
 
-/* topbar */
-
-.topbar{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #10131a;
-    width: 100%;
-}
-
-.topbar button{
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 40px;
-    color: white;
-}
-
 /* sidebar  */
 
 .sidebar{
@@ -138,6 +120,27 @@ main{
     background-color: #151a22;
 }
 
+.content{
+    width: 100%;
+}
+
+/* topbar  */
+
+.topbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #10131a;
+    padding: 10px;
+}
+
+.topbar button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
+}
 
 /* footer  */
 
@@ -156,11 +159,6 @@ footer{
     height: 80px;
 }
 
-.maincontainer{
-    height: 100px;
-    width: 100px;
-    background-color: red;
-}
 
 /* mobile (xs)*/
 
