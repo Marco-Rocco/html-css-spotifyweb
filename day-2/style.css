@@ -197,7 +197,7 @@ main{
 
 .recent .container .card img{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 10px 0px;
 }
 
 .recent .container .card span{
@@ -285,7 +285,7 @@ footer{
     }
     
     
-    .recent .container .card{
+    .recent .container .card, .createdfor .container .card{
         width: calc((100% - 20px) /2);
     }
 
@@ -317,8 +317,7 @@ footer{
         flex-wrap: wrap;
     }
     
-    
-    .recent .container .card{
+    .recent .container .card, .createdfor .container .card{
         width: calc((100% - 20px) /2);
     }
        
@@ -353,9 +352,8 @@ footer{
     .recent .container{
         flex-wrap: wrap;
     }
-    
-    
-    .recent .container .card{
+      
+    .recent .container .card, .createdfor .container .card{
         width: calc((100% - 60px) /4);
     }
        
