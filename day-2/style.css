@@ -148,20 +148,17 @@ main{
 }
 
 .topmenu ul {
-    width: 80%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 10px;
-    gap: 5px;
+    gap: 40px;
 }
 
 .topmenu ul li{
     border-bottom: 2px solid transparent;
-    width: calc((100% - 25px) /6);
     text-align: center;
 }
 
@@ -272,15 +269,9 @@ footer{
     /* main  */
 
     .topmenu ul {
-        width: 100%;
-        justify-content: space-evenly;
+        gap: 15px;
     }
     
-    .topmenu ul li{
-        width: calc((100% - 15px) /4);
-        font-size: smaller;
-    }
-
     .recent .container{
         flex-wrap: wrap;
     }
@@ -303,15 +294,9 @@ footer{
 @media screen and (min-width: 576px) and (max-width: 768px) {
     
     /* main  */
-
-    .topmenu ul {
-        width: 100%;
-        justify-content: space-evenly;
-    }
     
-    .topmenu ul li{
-        width: calc((100% - 10px) /3);
-        font-size: smaller;
+    .topmenu ul {
+        gap: 15px;
     }
 
     .recent .container{
@@ -339,16 +324,6 @@ footer{
 @media screen and (min-width: 768px) and (max-width: 992px){
     
     /* main  */
-
-    .topmenu ul {
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    
-    .topmenu ul li{
-        width: calc((100% - 20px) /5);
-        font-size: smaller;
-    }
 
     .recent .container{
         flex-wrap: wrap;
