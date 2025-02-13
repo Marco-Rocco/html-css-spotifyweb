@@ -1,0 +1,372 @@
+/* general  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* sidebar  */
+
+.sidebar{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+    width: fit-content;
+    padding: 10px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo :first-child{
+    width: 200px;
+}
+
+.logo :nth-last-child(1){
+    display: none;
+}
+
+.sidebar ul{
+    margin-bottom: 20px;
+}
+
+.sidebar ul img{
+    width: 25px;
+}
+
+li{
+    color: white;
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    border-left: solid 2px transparent;
+
+}
+
+#menu li:hover{
+    border-left: solid 2px #adff2f;
+}
+
+li > *{
+    vertical-align: middle;
+    margin: 0px 5px 5px 0px;
+}
+
+.sidebar p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.add {
+    padding: 10px 12px;
+    background-color: gray;
+    width: fit-content;
+    display: inline-block;
+}
+
+.download{
+    border-bottom: 1px solid white;
+    opacity: 0.7;
+
+}
+
+.download img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.download span{
+    color: white;
+    vertical-align: middle;
+}
+
+.pfp{
+    display: inline-block;
+    background-color: gray;
+    padding: 7px 9px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.pfp img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+.profile span{
+    color: white;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* main  */
+
+main{
+    display: flex;
+    height: calc(100vh - 80px);
+    background-color: #151a22;
+    overflow: scroll;
+}
+
+.content{
+    width: 100%;
+}
+
+.upgrade{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #10131a;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.upgrade button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
+}
+
+.topmenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 40px;
+}
+
+.topmenu ul li{
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+
+.topmenu ul li:hover{
+    border-bottom: solid 2px #adff2f;
+}
+
+.recent, .createdfor, .artists{
+    padding: 10px 20px; 
+}
+
+.recent h2, .createdfor h2, .artists h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.recent .container, .createdfor .container, .artists .container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.recent .container .card, .createdfor .container .card, .artists .container .card{
+    width: calc((100% - 100px) /6);
+    text-align: center;
+    color: white;
+}
+
+.recent .container .card p, .createdfor .container .card p, .artists .container .card p{
+    margin-bottom: 10px;
+}
+
+.recent .container .card img, .createdfor .container .card img{
+    width: 100%;
+}
+
+.artists .container .card img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.recent .container .card span{
+    color: gray;
+    opacity: 0.7;
+}
+
+.createdfor span, .artists span{
+    color: gray;
+    opacity: 0.7;
+}
+
+.imgcontainer{
+    position:relative;
+    margin-bottom: 10px;
+
+}
+
+.hover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.imgcontainer:hover .hover{
+    display: flex;
+}
+
+/* footer  */
+
+footer{
+    background-color: #272727;
+}
+
+/* mobile (xs)*/
+
+@media screen and (max-width: 576px) {
+
+    /* sidebar */
+
+    .logo :first-child{
+        display: none;
+    }
+    
+    .logo :nth-last-child(1){
+        display: block;
+        width: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    nav ul{
+        text-align: center;
+    }
+
+    .sidebar nav li span{
+        display: none;
+    }
+
+    .sidebar nav li img{
+        width: 30px;
+        margin: auto;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .download{
+        border: none;
+    }
+
+    .download span, .profile span{
+        display: none;
+    }
+
+    /* main  */
+
+    .topmenu ul {
+        gap: 15px;
+    }
+    
+    .recent .container{
+        flex-wrap: wrap;
+    }
+    
+    
+    .recent .container .card, .createdfor .container .card, .artists .container .card{
+        width: calc((100% - 20px) /2);
+    }
+
+}
+
+
+
+
+
+
+
+/* small  */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    
+    /* main  */
+    
+    .topmenu ul {
+        gap: 15px;
+    }
+
+    .recent .container{
+        flex-wrap: wrap;
+    }
+    
+    .recent .container .card, .createdfor .container .card, .artists .container .card{
+        width: calc((100% - 20px) /2);
+    }
+       
+
+
+}
+
+
+
+
+
+
+
+
+
+/* tablet (m)  */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+    /* main  */
+
+    .recent .container{
+        flex-wrap: wrap;
+    }
+      
+    .recent .container .card, .createdfor .container .card, .artists .container .card{
+        width: calc((100% - 60px) /4);
+    }
+       
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* debug */
+
+
+footer{
+    height: 80px;
+}
+
