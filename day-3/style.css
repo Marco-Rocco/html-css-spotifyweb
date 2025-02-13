@@ -319,6 +319,28 @@ footer .info{
     height: 100%;   
 }
 
+.right{
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.volume-bar{
+    background-color: #5a5a5a;
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+
+.volume-level{
+    background-color: #c1c1c1;
+    width: 12%;
+    height: 100%;   
+}
+
 
 
 
