@@ -243,7 +243,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 10px;
-    height: 90px;
+    width: 100%;
 }
 
 footer .left, .mid, .right{
@@ -287,6 +287,10 @@ footer .info{
 .control{
     color: white;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .control i{
@@ -301,11 +305,16 @@ footer .info{
 
 .progress{
     color: white;
+    width: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .bar{
     background-color: #5a5a5a;
-    width: 400px;
+    width: 75%;
     height: 3px;
     display: inline-block;
     vertical-align: middle;
@@ -323,6 +332,11 @@ footer .info{
     align-items: center;
     gap: 20px;
     color: white;
+}
+
+.volume{
+    display: flex;
+    align-items: center;
 }
 
 .volume-bar{
@@ -432,7 +446,10 @@ footer .info{
         width: calc((100% - 20px) /2);
     }
        
-
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
